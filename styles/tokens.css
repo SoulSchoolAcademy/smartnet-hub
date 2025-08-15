@@ -1,0 +1,22 @@
+:root{
+  --p1:#EEE7FF; --p2:#D6C9FF; --p3:#BCA7FF; --p4:#9C7BFF; --p5:#7C4DFF; --p6:#5F36E6;
+  --bg:#0B0D13; --card:#121321; --card2:#16162A; --hair:#272949;
+  --ink:#F6F7FB; --ink-soft:#C6C7D4; --ink-dark:#0E0E14;
+  --pill:999px; --r:18px; --ring:0 0 0 3px rgba(255,255,255,.2),0 0 0 6px rgba(124,77,255,.35);
+}
+[data-theme="light"]{--bg:#FAFBFF;--card:#fff;--card2:#F6F7FF;--hair:#E0E2F5;--ink:#0E0E14;--ink-soft:#384062;--ink-dark:#000}
+[data-theme="naya"]{--bg:#1A0C44;--card:#24115F;--card2:#2B1778;--hair:#6E58D6;--ink:#FBFAFF;--ink-soft:#ECE5FF;--ink-dark:#0E0E14}
+
+.btn{--fg:#fff;--bd:#fff;display:inline-flex;align-items:center;justify-content:center;gap:.55rem;min-height:52px;padding:1.05rem 1.25rem;border-radius:999px;border:4px solid var(--bd);color:var(--fg);font-weight:900;background:linear-gradient(180deg,#171922,#0E0E14);box-shadow:0 22px 44px rgba(124,77,255,.55), inset 0 1px 0 rgba(255,255,255,.28)}
+.btn.white{--fg:#0E0E14;--bd:var(--p6);background:#fff}
+.btn.purple{--fg:#fff;--bd:var(--p6);background:linear-gradient(180deg,var(--p4),var(--p6))}
+[data-theme="naya"] .btn{background:#0E0E14;border-color:#fff;color:#fff}
+
+.tab{border:4px solid var(--p6);border-radius:999px;font-weight:900;box-shadow:0 16px 34px rgba(0,0,0,.30)}
+.tab.active{background:linear-gradient(180deg,var(--p4),var(--p6));color:#fff}
+[data-theme="naya"] .tab{background:#0E0E14;border-color:#fff;color:#fff}
+
+.sbbtn{border:4px solid var(--p6);border-radius:16px;background:linear-gradient(180deg,#1c1e34,#141527);box-shadow:0 18px 34px rgba(0,0,0,.32);position:relative}
+.sbbtn:before{content:"";position:absolute;left:-4px;top:-4px;bottom:-4px;width:6px;border-radius:12px;background:linear-gradient(180deg,var(--p4),var(--p6));opacity:.9}
+.sbicon{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:#0E0E14;color:#fff;border:2px solid #fff;box-shadow:inset 0 0 0 4px var(--p6), 0 10px 22px rgba(124,77,255,.25)}
+.sb-badge{min-width:22px;height:22px;border-radius:11px;padding:0 6px;background:linear-gradient(180deg,var(--p4),var(--p6));color:#fff;font-weight:900}
