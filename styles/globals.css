@@ -1,0 +1,13 @@
+@import "./tokens.css";
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Inter,Roboto,Arial
+}
+body:after{
+  content:"";position:fixed;inset:0;pointer-events:none;opacity:.05;
+  background-image:radial-gradient(rgba(255,255,255,.12) 1px, transparent 1.2px);
+  background-size:18px 18px;mix-blend-mode:soft-light
+}
+a{text-decoration:none;color:inherit}
